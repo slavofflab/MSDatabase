@@ -17,8 +17,8 @@ args = parser.parse_args()
 
 #input_file = args.inputfile
 #output_file = args.outputfile
-input_file = "ERVKMAP.fa"
-output_file = "ERVKMAP_Stop_Stop.fasta"
+input_file = "sample.fa"
+output_file = "sample_Stop_Stop.fasta"
 
 out_list = []
 pep_col = {}
