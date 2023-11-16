@@ -6,4 +6,4 @@
 #SBATCH --nodes=1 --ntasks=1 --cpus-per-task=8
 #SBATCH --mem-per-cpu=2G
 #SBATCH --mail-type=None
-samtools index -@ 8 ./sort/MCF7_3.sorted.bam
+samtools index -@ 8 ./sort/input.sorted.bam
