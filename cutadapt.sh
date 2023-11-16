@@ -7,4 +7,5 @@
 #SBATCH --mem-per-cpu=1G
 #SBATCH --mail-type=None
 cutadapt -a AGATCGGAAGAGCACACGTCTGAACTCCAGTCA -A AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT -m 18 -o ./trim/output_R1.trimmed.fastq.gz -p ./trim/output_R2.trimmed.fastq.gz ./raw/input_R1.fastq.gz ./raw/input_R2.fastq.gz
-#Here are adapter for 
+#Here we used Illumina Universal Adapter for example
+#More adptar sequence can be found from https://dnatech.genomecenter.ucdavis.edu/wp-content/uploads/2019/03/illumina-adapter-sequences-2019-1000000002694-10.pdf
