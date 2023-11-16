@@ -1,5 +1,5 @@
 #!/bin/bash
-for file in /home/hs848/project/ncbi/sra/*sra
+for file in /home/yourname/project/ncbi/sra/*sra
 do
   cat>./raw/fastqd.sh<<EOF
 #!/bin/bash
