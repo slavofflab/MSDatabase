@@ -36,8 +36,8 @@ ini_table["TTG"] = "M"
 
 #input_file = args.inputfile
 #output_file = args.outputfile
-input_file = "MCF7.fa"
-output_file = "MCF7_Start_Stop.fasta"
+input_file = "sample.fa"
+output_file = "sample_Start_Stop.fasta"
 
 out_list = []
 pep_col = {}
