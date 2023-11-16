@@ -6,4 +6,4 @@
 #SBATCH --nodes=1 --ntasks=1 --cpus-per-task=1
 #SBATCH --mem-per-cpu=5G
 #SBATCH --mail-type=None
-bedtools getfasta -fi ~/project/stargenome/genomefile.fa -bed ./asemble/generic/filename.bed  -s -nameOnly > filename.fa
+bedtools getfasta -fi ~/project/stargenome/genomefilename.fa -bed ./asemble/samplename/filename.bed  -s -nameOnly > filename.fa
