@@ -6,4 +6,4 @@
 #SBATCH --nodes=1 --ntasks=1 --cpus-per-task=1
 #SBATCH --mem-per-cpu=5G
 #SBATCH --mail-type=None
-gffread ./asemble/MCF7/MCF7.gtf -g ~/project/stargenome/pri_hg38.fa -w MCF7.fa
+gffread ./asemble/genome/annotation.gtf -g ~/project/stargenome/genome.fa -w sample.fa
