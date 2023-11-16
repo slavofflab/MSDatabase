@@ -6,4 +6,4 @@
 #SBATCH --nodes=1 --ntasks=1 --cpus-per-task=1
 #SBATCH --mem-per-cpu=1G
 #SBATCH --mail-type=None
-fastqc ./raw/MCF7_3_R2.fastq.gz
+fastqc ./raw/input_R2.fastq.gz
