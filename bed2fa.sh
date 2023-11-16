@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=cufflinks
+#SBATCH --job-name=bedtofasta
 #SBATCH --out="slurm-%j.out"
 #SBATCH --partition=day
 #SBATCH --time=2:00:00
