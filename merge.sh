@@ -7,4 +7,4 @@
 #SBATCH --mem-per-cpu=2G
 #SBATCH --mail-type=None
 samtools merge ./sort/output_merge.bam ./sort/input_1.sorted.bam ./sort/input_2.sorted.bam ./sort/input_3.sorted.bam
-#List all bam file here
+#List all bam files here
