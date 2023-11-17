@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 ## Slavoff Lab
-## This script can filte Mascot result with annotated database to get unannotated proteins.
+## This script can filter Mascot results with annotated database(s) to get unannotated proteins.
 ## Author: Haomiao Su
 ## Email: haomiao.su@yale.edu
 
@@ -16,9 +16,9 @@ startTime = time.time()
 tracemalloc.start()
 
 #Input file name
-infile = "F533694.csv"
+infile = "input.csv"
 outfile = infile.replace(".csv", "_fi.csv")
-#score filter, this should change by score distrubution
+#score filter, this should be changed based on Mascot score distrubution
 sf = 37
 #select True if want to filter with targe database, or select False
 dbfilter = True
@@ -36,7 +36,7 @@ with open(infile) as csvfile:
         if score < sf:
             pass
         else:            
-#Change number after "==" to unannotated databse number in Mascot searching
+#Change number after "==" to unannotated database number in Mascot search
             if line[2][0] == "3" or line[2][0] == "4":
                 Flag = True
             if pep in peplist:
@@ -76,7 +76,7 @@ peplist3 = []
 if dbfilter:
     print("Start loading proteins")
     prolist = []
-#Full path to annotated database. NCBI will be better than Uniprot
+#Full path to annotated database. NCBI database recommended
     profile = "E:/DataBase/NCBI_GRCh38_latest_protein.fasta"
     for record in SeqIO.parse(profile,"fasta"):
         prolist.append("_" + str(record.seq) + "@")
