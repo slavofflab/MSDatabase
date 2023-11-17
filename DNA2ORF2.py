@@ -1,8 +1,8 @@
 #!/usr/bin/python
-## This script can translate transcriptome to all possible ORFs in 3 frame by start to stop modle.
+## This script can translate transcriptome to all possible ORFs in 3 frame by start to stop mode.
 ## Please change the sample name in line 41-43
 ## "sample_name_Start_Stop.fasta" merged same peptides and should be used as database
-## "sample_name_Start_Stop_all.fasta" can be used to find all source of specific peptide  
+## "sample_name_Start_Stop_all.fasta" can be used to find all RNA sources of a specific peptide  
 ## Author: Haomiao Su
 ## Email: haomiao.su@yale.edu
 
@@ -21,7 +21,7 @@ def start_pos(nseq, it):
         start_p += it[nseq[3*j:3*j+3]]
     return start_p
 
-parser = argparse.ArgumentParser(description='Translate transcriptome to all possible ORFs in 3 frame by stop to stop modle')
+parser = argparse.ArgumentParser(description='Translate transcriptome to all possible ORFs in 3 frame by stop to stop mode')
 parser.add_argument('-i', '--input', dest = 'inputfile', help = 'input DNA/RNA fasta file')
 parser.add_argument('-o', '--output', dest = 'outputfile', help = 'input protein fasta file')
 args = parser.parse_args()
