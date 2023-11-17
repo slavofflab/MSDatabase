@@ -16,4 +16,5 @@ cutadapt -a AGATCGGAAGAGCACACGTCTGAACTCCAGTCA -A AGATCGGAAGAGCGTCGTGTAGGGAAAGAGT
 EOF
   sbatch cutadapt.sh
 done
-
+#Here we used Illumina Universal Adapter for example
+#More adptar sequence can be found from https://dnatech.genomecenter.ucdavis.edu/wp-content/uploads/2019/03/illumina-adapter-sequences-2019-1000000002694-10.pdf
