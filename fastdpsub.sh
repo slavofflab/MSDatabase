@@ -3,7 +3,7 @@ for file in /home/yourname/project/ncbi/sra/*sra
 do
   cat>./raw/fastqd.sh<<EOF
 #!/bin/bash
-#SBATCH --job-name=fastq_dump
+#SBATCH --job-name=fast_dump
 #SBATCH --out="slurm-%j.out"
 #SBATCH --partition=day
 #SBATCH --time=4:00:00
