@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=bamsort
+#SBATCH --job-name=bammergesort
 #SBATCH --out="slurm-%j.out"
 #SBATCH --partition=day
 #SBATCH --time=4:00:00
