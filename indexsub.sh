@@ -9,7 +9,7 @@ do
 #SBATCH --time=1:00:00
 #SBATCH --nodes=1 --ntasks=1 --cpus-per-task=8
 #SBATCH --mem-per-cpu=2G
-#SBATCH --mail-type=ALL
+#SBATCH --mail-type=None
 samtools index -@ 8 $infile
 EOF
   sbatch idx.sh
