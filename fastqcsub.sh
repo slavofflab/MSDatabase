@@ -3,7 +3,7 @@ for file in ./raw/*.fastq.gz
 do
   cat>fastqc.sh<<EOF
 #!/bin/bash
-#SBATCH --job-name=fastq_dump
+#SBATCH --job-name=fastqc
 #SBATCH --out="slurm-%j.out"
 #SBATCH --partition=day
 #SBATCH --time=1:00:00
